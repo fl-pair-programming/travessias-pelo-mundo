@@ -1,0 +1,19 @@
+{
+  "name": "travessias-pelo-mundo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && electron .",
+    "dev": "tsc --watch && electron ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "private": true
+}
