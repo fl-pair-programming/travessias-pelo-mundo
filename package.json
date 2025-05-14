@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
     "start": "tsc && electron .",
-    "dev": "tsc --watch && electron ."
+    "dev": "ts-node src/main.ts",
+    "build": "tsc && electron-builder"
   },
   "devDependencies": {
     "@types/node": "^22.15.17",
