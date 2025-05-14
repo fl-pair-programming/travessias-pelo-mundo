@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc && electron .",
-    "dev": "ts-node src/main.ts",
+    "dev": "ts-node src/main/main.ts",
     "build": "tsc && electron-builder"
   },
   "devDependencies": {
@@ -15,5 +15,10 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
+  }
 }

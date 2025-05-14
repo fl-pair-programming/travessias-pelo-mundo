@@ -1,6 +1,5 @@
 import { app, BrowserWindow } from 'electron'
 import path from 'path'
-import { startApiServer } from './main/server'
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -17,10 +16,10 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-    startApiServer() // inicia backend local
     createWindow()
 })
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
+
